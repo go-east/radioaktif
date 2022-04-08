@@ -1,3 +1,4 @@
+
     window.userWalletAddress = null
     const loginButton = document.getElementById('loginButton')
     const userWallet = document.getElementById('userWallet')
@@ -5,8 +6,6 @@
     function toggleButton() {
       if (!window.ethereum) {
         loginButton.innerText = 'MetaMask is not installed'
-        loginButton.classList.remove('bg-purple-500', 'text-white')
-        loginButton.classList.add('bg-gray-500', 'text-gray-100', 'cursor-not-allowed')
         return false
       }
 
